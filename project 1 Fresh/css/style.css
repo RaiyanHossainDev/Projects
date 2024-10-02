@@ -1,0 +1,357 @@
+                        /* ====== font link start ========= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+
+                        /* ====== font link end =========== */
+                        /* ========  common css start =========== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ol,ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+                        /* ======== common css End ========== */
+
+                        /* ======== menu start ======= */
+.main-menu {
+    width: 100%;
+    padding-top: 52px;
+    padding-bottom: 112px;
+}
+.menu_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row .logo_col img{
+    width: 133px;
+}
+.menu_row .menu_col ul {
+    display: flex;
+    gap: 59px;
+}
+.menu_row .menu_col ul li {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.menu_row .menu_col ul li a {
+    color: black;
+    transition: all linear .2s;
+}
+.menu_row .menu_col ul  li a:hover {
+    color: #FDBB57;
+}
+.menu_row .menu_button a{
+    color: black;
+    width: 121px;
+    height: 57px;
+    border: 1px solid #FDBB57;
+    border-radius: 10px;
+    background-color: #FDBB57;
+    text-align: center;
+    line-height: 57px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    transition: all linear .3s;
+}
+.menu_row .menu_button a:hover {
+    background-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+
+                        /* ============== menu End ============== */
+
+
+
+                        /* ============ banner starts ========== */
+
+
+.banner_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_row .banner_text h1 {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    width: 449px;
+}
+.banner_row .banner_text p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    width: 531px;
+    color: black;
+    margin-top: 38px;
+    margin-bottom: 76px;
+}
+.banner_text .banner_button a{
+    width: 319px;
+    height: 91px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 91px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    transition: all linear .05s;
+}
+.banner_text .banner_button a:active {
+    transform: scale(0.9);
+}
+
+
+
+
+                        /* ======== banner Ends ======== */
+                        /* ======== collection start====== */
+#collection {
+    padding-top: 106px;
+}
+.collection_head h2 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    text-align: center;
+
+}
+.collection_head p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-top: 41px;
+    text-align: center;
+}
+.collection_row {
+    display: flex;
+    gap: 87px;
+    margin-top: 40px;
+}
+.single_collection_card {
+    width: 349px;
+    height: 402px;
+    background: url(../image/collection_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.single_collection_card a {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+
+    color: black;
+    padding: 9px 104px 13px 112px;
+    background-color: white;
+    border-radius: 20px;
+
+    position: absolute;
+    bottom: 44px;
+    left: 700px;
+    
+    transform: translateX(-50%);
+    transition: all linear .4s;
+}
+.single_collection_card:hover a {
+    left: 50%;
+}
+.single_collection_card a:hover {
+    color: white;
+    background-color: black;
+}
+.card2 {
+    background: url(../image/collection_2.png);
+}
+.card2 a {
+    left: 174px;
+    bottom: 700px;
+}
+.card2:hover a{
+    bottom: 44px;
+}
+.card3 {
+    background: url(../image/collection_3.png);
+}
+.card3 a{
+    left: 174px;
+    bottom: -400px;
+}
+.card3:hover a {
+    bottom: 44px;
+}
+                        /* ======== collection end ======== */
+                        /* ======== fashion part end ====== */
+#fashion {
+    padding-top: 212px;
+}
+.fashion_row {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+.fashion_row .fashion_text {
+    margin-right: 106px;
+}
+.fashion_row .fashion_text h2 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    width: 387px;
+}
+.fashion_row .fashion_text p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    width: 443px;
+    margin-top: 63px;
+    margin-bottom: 136px;
+}
+.fashion_row .fashion_counter {
+    width: 793px;
+    background: #FEECC8;
+    padding-top: 69px;
+    padding-bottom: 68px;
+    border-radius: 20px;
+    padding-left: 29px;
+
+    display: flex;
+    gap: 59px;
+}
+.fashion_counter .single_counter {
+    display: flex;
+    gap: 27px;
+}
+.fashion_counter .single_counter .single_counter_text h3 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Podkova", serif;
+}
+.fashion_counter .single_counter .single_counter_text p {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-top: 28px;
+}
+.fashion_counter .single_counter .single_counter_line {
+    width: 1px;
+    height: 143px;
+    background: #000;
+}
+.fashion_row .fashion_image img {
+    position: absolute;
+    left: -14px;
+    top: -142px;
+}
+                        /* ========= fashion part end ===== */
+                        /* ========= footer part starts ============ */
+#footer {
+    margin-top: 96px;
+    background: #CFA485;
+    padding-top: 35px;
+    padding-bottom: 192px;
+}
+.footer_row {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+.footer_row .footer_text h2 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    width: 315px;
+    margin-left: 20px;
+    color: #fff;
+}
+.footer_row .footer_text p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    width: 437px;
+    margin-top: 43px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: #fff;
+}
+.footer_row .footer_text a {
+    background-color: #000;
+    color: white;
+    padding: 25px 100px 25px 99px;
+    border-radius: 10px;
+
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    transition: all linear .1s;
+}
+.footer_row .footer_text a:hover {
+    transform: scale(1.1);
+}
+.footer_row .footer_text a:active {
+    transform: scale(.9);
+}
+
+
+.footer_card {
+    display: flex;
+    gap: 31px;
+}
+.single_footer_card {
+    background-color: white;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.single_footer_card .footer_card_text ul{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    margin-top: 14px;
+}
+.single_footer_card .footer_card_text ul li i {
+    color: #FFAF37;
+}
+.footer_card_text {
+    margin-left: 22px;
+}
+.footer_card_text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 9px;
+}
+.footer_card_text h4 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #C4C4C4;
+    padding: 9px;
+}
+.footer_card_text h4 span {
+    color: #000;
+    margin-left: 31px;
+}
+                        /* =========== footer part end ============= */

@@ -1,0 +1,330 @@
+                /* ============= font links part start ============= */
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+                /* ============= font links part end   ============= */
+                /* ============= common css part start ============= */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --monster: "Montserrat", sans-serif;
+    --brandColor: #054C73;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+.common_head h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #333333;
+    text-align: center;
+}
+.common_head p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--monster);
+    color: #666666;
+    text-align: center;
+    margin-top: 20px;
+}
+                /* ============= common css part end   ============= */
+                /* ============= nav part start ============= */
+.main_menu {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.main_menu ul {
+    display: flex;
+    gap: 70px;
+}
+.main_menu ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--monster);
+    transition: all linear .2s;
+}
+.main_menu ul li a:hover {
+    color: #054C73;
+    transform: scale(1.1);
+}
+                /* ============= nav part end   ============= */
+                /* ============= banner part start ============= */
+#banner {
+    padding-top: 155px;
+    padding-bottom: 151px;
+    background-image: url(../images/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_card {
+    display: flex;
+    justify-content: end;
+}
+.banner_card .main_banner_card {
+    padding: 37px 58px 41px 39px;
+    width: 643px;
+    background-color: #DFE9F4;
+    border-radius: 10px;
+    margin-right: -30px;
+}
+.banner_card .main_banner_card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--monster);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+.banner_card .main_banner_card h1 {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: var(--monster);
+    width: 421px;
+    margin-bottom: 20px;
+    color: var(--brandColor);
+}
+.banner_card .main_banner_card p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--monster);
+    width: 546px;
+    line-height: 39px;
+    margin-bottom: 30px;
+    color: #333333;
+}
+.banner_card .main_banner_card a {
+    padding: 25px 72px;
+    background-color: #054C73;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #fff;
+    text-decoration: none;
+    transition: all ease .2s;
+}
+.banner_card .main_banner_card a:hover {
+    transform: scale(1.1);
+}
+.banner_card .main_banner_card a:active {
+    transform: scale(1);
+}
+                /* ============= banner part end   ============= */
+                /* ============= support part start ============= */
+#support {
+    padding-top: 46px;
+}
+.support_card {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+.support_card .support_text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--monster);
+    color: #333333;
+}
+.support_card .support_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--monster);
+    color: #333333;
+    margin-top: -2px;   
+}
+                /* ============= support part end   ============= */
+                /* ============= collection part start ============= */
+#collection {
+    padding-top: 60px;
+}
+.collection_image img {
+    margin-top: 91px;
+    transition: all ease .3s;
+}
+.collection_image img:hover {
+    margin-top: -12px;
+}
+
+                /* ============= collection part end   ============= */
+                /* ============= learn part start ============= */
+#learn {
+    padding-top: 55px;
+    padding-bottom: 65px;
+    background-color: #F2F5FF;
+    margin-top: 62px;
+    margin-bottom: 55px;
+}
+#learn .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.learn_text .common_head h2{
+    text-align: start;
+}
+.learn_text .common_head p{
+    text-align: start;
+    width: 489px;
+}
+.learn_text .learn_button a {
+    padding: 24px 57px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #FFFFFF;
+    background-color: #054C73;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: all linear .1s;
+}
+.learn_text .learn_button a:hover {
+    transform: scale(1.1);
+}
+.learn_text .learn_button a:active {
+    transform: scale(1);
+}
+
+                /* ============= learn part end   ============= */
+                /* ============= browse part start ============= */
+#browse {
+    padding-bottom: 121px;
+}
+.browse_card p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--monster);
+    color: #333333;
+    text-align: center;
+    margin-top: 30px;
+}
+.browse_card {
+    margin-top: 50px;
+}
+            /* ============= browse part end   ============= */
+                /* ============= work part start ============= */
+
+#work .work_card {
+    margin-top: 50px;
+}
+.card_text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #333333;
+    text-align: center;
+    margin-top: 30px;
+}
+.card_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--monster);
+    color: #666666;
+    text-align: center;
+    margin-top: 10px;
+}
+    
+
+                /* ============= work part end   ============= */
+                /* ============= mail part start ============= */
+
+#mail {
+    padding-top: 59px;
+    padding-bottom: 61px;
+    margin-top: 198px;
+    background: #F2F5FF;
+}
+#mail .common_head p {
+    width: 514px;
+    margin: 0 auto;
+    line-height: 39px;
+    margin-bottom: 50px;
+}
+.mail_bar {
+    width: 506px;
+    border: 1px solid #054C73;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.mail_bar input {
+    padding-left: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--monster);
+    border-radius: 3px;
+}
+.mail_bar button {
+    padding: 27px 45px;
+    border-radius: 3px;
+    background-color: #054C73;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--monster);
+    border: 1px solid #011C42;
+    color: #fff;
+    transition: all linear .2s;
+}
+.mail_bar button:hover {
+    background-color: #145070;
+}
+                /* ============= mail part end   ============= */
+                /* ============= Footer links part start ============= */
+
+#footer {
+    padding-top: 49px;
+    padding-bottom: 89px;
+    background-color: #03344F;
+}
+.footer_text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #fff;
+}
+.footer_text p {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--monster);
+    color: #fff;
+    margin-top: 34px;
+    margin-bottom: 21px;
+}
+.insta_head h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--monster);
+    color: #fff;
+}
+.insta_image {
+    margin-top: 34px;
+    display: flex;
+    gap: 21px;
+}
+.insta_image img {
+    width: 175px;
+}
+
+
+                /* ============= Footer links part end   ============= */
+                /* ============= font links part start ============= */
+
+
+                /* ============= font links part end   ============= */
+                /* ============= font links part start ============= */
+
+
+                /* ============= font links part end   ============= */

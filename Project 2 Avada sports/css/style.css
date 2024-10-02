@@ -1,0 +1,638 @@
+/* =====================  font family links start ===================== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yellowtail&display=swap');
+
+/* =====================  font family linkd ends  ===================== */
+/* =====================  common css start ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ol ,ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+:root {
+    --ibm: "IBM Plex Sans", sans-serif ;
+    --brand_color: #FF9600;
+    --yellow_tail: "Yellowtail", cursive;
+    --inter: "Inter", sans-serif;;
+}
+.common_head h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--yellow_tail);
+    color: #49C4F5;
+}
+.common_head h3 {
+    width: 598px;
+    font-size: 54px;
+    font-size: 700;
+    font-family: var(--ibm);
+    margin-top: 4px;
+    margin-bottom: 29px;
+    color: #222222;
+}
+.common_head {
+    position: relative;
+}
+.common_head::after {
+    content: '';
+    width: 83px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+}
+span {
+    display: inline-block;
+}
+                /* =====================  common css ends  ===================== */
+
+                /* =====================  Nav start ===================== */
+#nav_bar {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+}
+.menu_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row .menu_logo img{
+    width: 225.12px;
+}
+.menu_row .menu_col ul{
+    display: flex;
+    gap: 58px;
+}
+.menu_row .menu_col ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    transition: all linear .3s;
+}
+.menu_row .menu_col ul li {
+    position: relative;
+}
+.menu_row .menu_col ul li ul {
+    display: inline;
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.menu_row .menu_col ul li ul li a {
+    padding: 5px;
+    color: white;
+}
+.menu_row .menu_col ul li a:hover {
+    color: var(--brand_color);
+}
+.menu_row .menu_col ul li:hover ul {
+    opacity: 10;
+}
+.menu_row .menu_button a {
+    padding: 20px 51px 21px;
+    background-color: var(--brand_color);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: white;
+    transition: all linear .1s;
+}
+.menu_row .menu_button a:active {
+    transform: scale(.9);
+}
+/* =====================  Nav css ends  ===================== */
+
+
+/* =====================  Banner  start ===================== */
+#banner {
+    background-image: url(../images/banner_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-top: 240px;
+    padding-bottom: 212px; 
+}
+.banner_text h1 {
+    width: 819px;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-left: 252px;
+    text-align: center;
+}
+.banner_button {
+    margin-left: 425px;
+    margin-top: 48px;
+    display: flex;
+    gap: 57px;
+}
+.banner_button a {
+    padding: 20px 41px 19px 40px;
+    background-color: #FF9600;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    transition: all linear .2s;
+}
+.banner_button a:hover {
+    color: black;
+    background-color: white;
+}
+.banner_button a:active {
+    transform: scale(.9);
+}
+/* =====================  Banner  ends  ===================== */
+
+
+/* =====================  Adventure css start ===================== */
+
+#adventure {
+    padding-top: 105px;
+}
+.adventure_row {
+    display: flex;
+    gap: 75px;
+}
+.adventure_row .adventure_text p {
+    width: 597px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    margin-top: 68px;
+}
+.adventure_text .options {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.options .single_option_card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.options .single_option_card span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    display: inline-block;
+}
+.options .single_option_card {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+}
+.adventure_row .adventure_text a {
+    margin-top: 48px;
+    padding: 20px 36px 20px 37px;
+    background-color: var(--brand_color);
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+
+    transition: all ease .1s;
+}
+.adventure_row .adventure_text a:hover {
+    transform: scale(1.1);
+}
+.adventure_row .adventure_text a:active {
+    transform: scale(.9);
+}
+.adventure_row .adventure_image .image_one {
+    width: 299px;
+    margin-right: 50px;
+}
+.adventure_row .adventure_image .image_two {
+    width: 294px;
+}
+/* =====================  Adventure css ends  ===================== */
+
+/* =====================  counter css start ===================== */
+
+#counter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.counter_card {
+    display: flex;
+    gap: 15px;
+}
+.counter_card .single_counter_card {
+    padding: 0px 83px 23px 83px;
+    background-color: #FFF4E5;
+}
+.single_counter_card .counter_card_text {
+    text-align: center;
+}
+.single_counter_card .counter_card_text h2 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+}
+.single_counter_card .counter_card_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+}
+.counter_card .register {
+    background-color: #E7FDE9;
+}
+.counter_card .experience {
+    background-color: #F2F2FD;
+}
+/* =====================  counter css ends  ===================== */
+/* =====================  sports css start ===================== */
+#sports {
+    padding-top: 110px;
+    background-color: #0C3543;
+}
+.sports_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sports_head .common_head h2{
+    color: #FF960B;
+}
+.sports_head .common_head h3 {
+    color: #fff;
+}
+.sports_head .common_head::after {
+    width: 83px;
+    height: 3px;
+    background-color: #fff;
+}
+.sports_head .sports_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    width: 622px;
+    color: #fff;
+}
+.sports_card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    margin-top: 99px;
+}
+.sports_card .single_sports_card {
+    width: 424px;
+    height: 438px;
+    background-color: #0F4152;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.single_sports_card .sports_card_image img{
+    transition: all ease .2s;
+}
+.single_sports_card .sports_card_image:hover img {
+    transform: scale(1.1);
+}
+.single_sports_card .sports_card_text {
+    text-align: center;
+}
+.single_sports_card .sports_card_text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter);
+    color: #fff;
+    margin-top: 37px;
+    transition: all linear .2s;
+}
+.single_sports_card .sports_card_text h2:hover {
+    color: var(--brand_color);
+}
+.single_sports_card .sports_card_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter);
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+.sports_BG_image {
+    margin-top: 117px;
+    margin-left: 10px;
+    width: 1080px;
+}
+/* =====================  sports css ends  ===================== */
+/* =====================  video css start ===================== */
+#video {
+    background-color: var(--brand_color);
+}
+.video {
+    position: relative;
+}
+.video_logo {
+    text-align: center;
+    padding-top: 31px;
+}
+.video_logo img {
+    width: 103px;
+}
+.video_text h2 {
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    width: 1316px;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 51px;
+}
+.video_text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    width: 695px;
+    text-align: center;
+    margin: 0 auto;
+}
+.video_button {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 56px;
+    padding-bottom: 490px;
+}
+.video_button a {
+    padding: 23px 43px;
+    background-color: #0C3543;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    transition: all ease .2s;
+}
+.video_button a:hover {
+    transform: scale(1.1);
+}
+.video_button a:active {
+    transform: scale(1);
+}
+
+
+.video_card {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 588px;
+    left: 15px;
+    width: 100%;
+}
+.video_card .single_video_card {
+    height: 447px;
+    width: 395px;
+    background-image: url(../images/video\ image\ 1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 66px;
+}
+.video_card .single_video_card h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.video_card .single_video_card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.video_card .single_video_card span {
+    width: 260px;
+    height: 2px;
+    background-color: #C4C4C4;
+    display: inline-block;
+}
+.video_card .single_video_card p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+.video_card .cardtwo {
+    background-image: url(../images/video\ image\ 2.png);
+    padding-left: 32px;
+    border-radius: 10px;
+}
+.video_card .cardtwo span {
+    width: 339px;
+}
+.video_card .cardthree {
+    background-image: url(../images/video\ image\ 3.png);
+    padding-left: 32px;
+    border-radius: 10px;
+}
+.video_card .cardthree span {
+    width: 339px;
+}
+/* =====================  video css ends  ===================== */
+/* =====================  News css start ===================== */
+#news {
+    padding: 244px;
+}
+.news_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_head .common_head h2 {
+    color: #FF9600;
+}
+.news_head .common_head h3 {
+    width: 407px;
+}
+.news_head .common_head::after {
+    background-color: #A0A0A0;
+    width: 85px;
+    height: 2px;
+}
+.news_head .news_text p {
+    width: 619px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+}
+
+.news_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+.news_card .single_news_card {
+    width: 424px;
+    text-align: center;
+}
+.single_news_card .news_card_text h2 {
+    width: 315px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 32px;
+}
+.single_news_card .news_card_text p {
+    width: 312px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    margin: 0 auto;
+}
+.single_news_card .news_card_text span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: 42px;
+    margin-bottom: 44px;
+}
+.single_news_card .news_card_text a {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: var(--brand_color);
+    transition: all linear.2s;
+}
+.single_news_card .news_card_text a:hover {
+    color: #14B9F1;
+}
+/* =====================  News css ends  ===================== */
+/* =====================  logo css start ===================== */
+#logo {
+    margin-top: 265px;
+    margin-bottom: 42px;
+}
+.logo_row {
+    display: flex;
+    justify-content: space-between;
+}
+.logo_row img{
+    width: 163px;
+    transition: all ease .3s;
+}
+.logo_row img:hover {
+    transform: scale(1.1);
+}
+/* =====================  logo css ends  ===================== */
+
+/* =====================  Footer css start ===================== */
+#footer {
+    padding-top: 80px;
+    padding-bottom: 119px;
+    background-color: #0C3543;
+    position: relative;
+}
+.footer_text {
+    display: flex;
+    justify-content: end;
+}
+.footer_image img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+}
+.all-footer-text .footer_logo img{
+    width: 252px;
+}
+.all-footer-text .footer_club {
+    display: flex;
+    gap: 33px;
+    margin-top: 80px;
+    margin-bottom: 52px;
+}
+.all-footer-text .footer_club a {
+    background-color: var(--brand_color);
+    width: 130px;
+    height: 60px;
+    text-align: center;
+   line-height: 30px;
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.all-footer-text .footer_club p {
+    width: 373px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.all-footer-text .footer_line span {
+    width: 536px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+.all-footer-text .footer_contact {
+    display: flex;
+    gap: 30px;
+    margin-top: 69px;
+}
+.all-footer-text .footer_contact .footer_contact_text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.all-footer-text .footer_contact .footer_contact_head h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.all-footer-text .footer_contact .footer_contact_text h3 ,.all-footer-text .footer_contact .footer_contact_text a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.all-footer-text .footer_stamp h2 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 62px;
+}
+/* =====================  Footer css ends  ===================== */

@@ -1,0 +1,655 @@
+@media (max-width: 575px) { 
+
+.main_menu .logo_image img {
+    width: 117px;
+}
+
+.navbar-toggler {
+	padding: 6px;
+}
+
+		/* ============== bannner part start ================== */
+#banner {
+	padding-top: 36px;
+	padding-bottom: 38px;
+}
+.banner_card {
+	display: flex;
+	justify-content: normal;
+}
+.banner_card .main_banner_card {
+	padding: 20px;
+	width: 288px;
+}
+.banner_card .main_banner_card h2 {
+	font-size: 14px;
+}
+.banner_card .main_banner_card h1 {
+	font-size: 26px;
+	width: 341px;
+}
+.banner_card .main_banner_card p {
+	font-size: 12px;
+	width: 307px;
+	line-height: 24px;
+}
+.banner_card .main_banner_card a {
+	padding: 10px 20px;
+	border-radius: 16px;
+	font-size: 10px;
+}
+				/* =================== support part start =============== */
+#support .row {
+	gap: 15px;
+}
+.support_card .support_text h2 {
+	font-size: 16px;
+}
+.support_card .support_text p {
+	font-size: 13px;
+}
+.support_card img {
+	width: 100px;
+}
+.support_card img {
+	width: 67px;
+}
+				/* =================== collection part =============== */
+.common_head h2 {
+	font-size: 18px;
+}
+.common_head p {
+	font-size: 12px;
+}
+.collection_image img {
+	margin-top: 15px;
+}
+.collection_image img {
+	width: 100%;
+}
+				/* ================ learn part start ==================== */
+#learn {
+	padding-top: 39px;
+	padding-bottom: 54px;
+	margin-top: 46px;
+	margin-bottom: 30px;
+}
+.common_head h2 {
+	font-size: 16px;
+}
+.learn_text .common_head p {
+	width: 298px;
+}
+.common_head p {
+	font-size: 11px;
+}
+.learn_text .learn_button a {
+	padding: 12px 19px;
+	font-size: 13px;
+	border-radius: 18px;
+	margin-top: 11px;
+
+}
+#learn .learn_image img {
+	width: 100%;
+	margin-top: 10px;
+}
+			/* ========================== browse part start ============================ */
+.browse_card {
+	margin-top: 27px;
+}
+#browse .browse_card img {
+	width: 100%;
+}
+.browse_card p {
+	font-size: 16px;
+	margin-top: 18px;
+}
+					/* =============== work part start ===================== */
+.work_card .card_image img {
+	width: 100%;
+}
+.card_text h2 {
+	font-size: 18px;
+}
+.card_text p {
+	font-size: 12px;
+}
+				/* ====================  mail part start ================== */
+#mail {
+	margin-top: 100px;
+
+}
+#mail .common_head p {
+	width: 293px;
+	line-height: 24px;
+}
+.common_head p {
+	font-size: 11px;
+}
+.mail_bar button {
+	padding: 8px 20px;
+	font-size: 12px;
+}
+.mail_bar input {
+	padding-left: 11px;
+	font-size: 11px;
+}
+.mail_bar {
+	width: 257px;
+}
+					/* footer part start */
+.footer_text h2 {
+	font-size: 17px;
+}
+.footer_text p {
+	width: 247px;
+	font-size: 12px;
+	margin-top: 25px;
+}
+.insta_image {
+	flex-wrap: wrap;
+}
+.insta_head h2 {
+	margin-top: 14px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px) { 
+
+	.main_menu .logo_image img {
+		width: 117px;
+	}
+	
+	.navbar-toggler {
+		padding: 6px;
+	}
+	
+			/* ============== bannner part start ================== */
+	#banner {
+		padding-top: 36px;
+		padding-bottom: 38px;
+	}
+	.banner_card {
+		display: flex;
+		justify-content: center;
+	}
+	.banner_card .main_banner_card {
+		padding: 20px;
+		width: 288px;
+	}
+	.banner_card .main_banner_card h2 {
+		font-size: 14px;
+	}
+	.banner_card .main_banner_card h1 {
+		font-size: 26px;
+		width: 341px;
+	}
+	.banner_card .main_banner_card p {
+		font-size: 12px;
+		width: 307px;
+		line-height: 24px;
+	}
+	.banner_card .main_banner_card a {
+		padding: 10px 20px;
+		border-radius: 16px;
+		font-size: 10px;
+	}
+					/* =================== support part start =============== */
+	#support .row {
+		gap: 15px;
+	}
+	.support_card .support_text h2 {
+		font-size: 16px;
+	}
+	.support_card .support_text p {
+		font-size: 13px;
+	}
+	.support_card img {
+		width: 100px;
+	}
+	.support_card img {
+		width: 67px;
+	}
+					/* =================== collection part =============== */
+	.common_head h2 {
+		font-size: 18px;
+	}
+	.common_head p {
+		font-size: 12px;
+	}
+	.collection_image img {
+		margin-top: 15px;
+	}
+	.collection_image img {
+		width: 100%;
+	}
+					/* ================ learn part start ==================== */
+	#learn {
+		padding-top: 39px;
+		padding-bottom: 54px;
+		margin-top: 46px;
+		margin-bottom: 30px;
+	}
+	.common_head h2 {
+		font-size: 16px;
+	}
+	.learn_text .common_head p {
+		width: 298px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.learn_text .learn_button a {
+		padding: 12px 19px;
+		font-size: 13px;
+		border-radius: 18px;
+		margin-top: 11px;
+	
+	}
+	#learn .learn_image img {
+		width: 100%;
+		margin-top: 10px;
+	}
+				/* ========================== browse part start ============================ */
+	.browse_card {
+		margin-top: 27px;
+	}
+	#browse .browse_card img {
+		width: 100%;
+	}
+	.browse_card p {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+						/* =============== work part start ===================== */
+	.work_card .card_image img {
+		width: 100%;
+	}
+	.card_text h2 {
+		font-size: 18px;
+	}
+	.card_text p {
+		font-size: 12px;
+	}
+					/* ====================  mail part start ================== */
+	#mail {
+		margin-top: 100px;
+	
+	}
+	#mail .common_head p {
+		width: 293px;
+		line-height: 24px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.mail_bar button {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	.mail_bar input {
+		padding-left: 11px;
+		font-size: 11px;
+	}
+	.mail_bar {
+		width: 257px;
+	}
+						/* footer part start */
+	.footer_text h2 {
+		font-size: 17px;
+	}
+	.footer_text p {
+		width: 247px;
+		font-size: 12px;
+		margin-top: 25px;
+	}
+	.insta_image {
+		flex-wrap: wrap;
+	}
+	.insta_head h2 {
+		margin-top: 14px;
+	}
+
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+	.main_menu .logo_image img {
+		width: 160px;
+	}
+	
+	.navbar-toggler {
+		padding: 6px;
+	}
+	
+			/* ============== bannner part start ================== */
+	#banner {
+		padding-top: 36px;
+		padding-bottom: 38px;
+	}
+	.banner_card {
+		display: flex;
+		justify-content: center;
+	}
+					/* =================== support part start =============== */
+	#support .row {
+		gap: 15px;
+		flex-wrap: nowrap;
+		width: 238px;
+	}
+	.support_card .support_text h2 {
+		font-size: 13px;
+	}
+	.support_card .support_text p {
+		font-size: 9px;
+	}
+	.support_card img {
+		width: 46px;
+	}
+					/* =================== collection part =============== */
+	.common_head h2 {
+		font-size: 18px;
+	}
+	.common_head p {
+		font-size: 12px;
+	}
+	#collection .row:nth-child(2) {
+		flex-wrap: nowrap;
+		width: 247px;
+	}
+	.collection_image {
+		width: 100px;
+	}
+	.collection_image img {
+		width: 216px;
+		margin-top: 15px;
+	}
+					/* ================ learn part start ==================== */
+	#learn .row {
+		width: 374px;
+		flex-wrap: nowrap;
+	}
+	#learn {
+		padding-top: 39px;
+		padding-bottom: 54px;
+		margin-top: 46px;
+		margin-bottom: 30px;
+	}
+	.common_head h2 {
+		font-size: 16px;
+	}
+	.learn_text .common_head p {
+		width: 298px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.learn_text .learn_button a {
+		padding: 12px 19px;
+		font-size: 13px;
+		border-radius: 18px;
+		margin-top: 11px;
+	
+	}
+	#learn .learn_image img {
+		width: 100%;
+		margin-top: 10px;
+	}
+				/* ========================== browse part start ============================ */
+	#browse .row:nth-child(2) {
+		flex-wrap: nowrap;
+		width: 247px;
+	}
+	.browse_card {
+		margin-top: 27px;
+	}
+	#browse .browse_card img {
+		width: 100%;
+	}
+	.browse_card p {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+						/* =============== work part start ===================== */
+	.work_card .card_image img {
+		width: 100%;
+	}
+	.card_text h2 {
+		font-size: 18px;
+	}
+	.card_text p {
+		font-size: 12px;
+	}
+	#work .row:nth-child(2) {
+		flex-wrap: nowrap;
+		width: 247px;
+	}
+					/* ====================  mail part start ================== */
+	#mail {
+		margin-top: 100px;
+	
+	}
+	#mail .common_head p {
+		width: 293px;
+		line-height: 24px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.mail_bar button {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	.mail_bar input {
+		padding-left: 11px;
+		font-size: 11px;
+	}
+	.mail_bar {
+		width: 257px;
+	}
+						/* footer part start */
+	.footer_text h2 {
+		font-size: 17px;
+	}
+	.footer_text p {
+		width: 247px;
+		font-size: 12px;
+		margin-top: 25px;
+	}
+	.insta_image {
+		flex-wrap: wrap;
+	}
+	.insta_image img {
+		width: 156px;
+	}
+	.insta_head h2 {
+		margin-top: 14px;
+	}
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+
+	.main_menu .logo_image img {
+		width: 160px;
+	}
+	
+	.navbar-toggler {
+		padding: 6px;
+	}
+	
+			/* ============== bannner part start ================== */
+	#banner {
+		padding-top: 36px;
+		padding-bottom: 38px;
+	}
+	.banner_card {
+		display: flex;
+		justify-content: center;
+	}
+					/* =================== support part start =============== */
+	#support .row {
+		gap: 15px;
+		flex-wrap: nowrap;
+	}
+	.support_card .support_text h2 {
+		font-size: 13px;
+	}
+	.support_card .support_text p {
+		font-size: 9px;
+	}
+	.support_card img {
+		width: 46px;
+	}
+					/* =================== collection part =============== */
+	.common_head h2 {
+		font-size: 18px;
+	}
+	.common_head p {
+		font-size: 12px;
+	}
+	.collection_image {
+		width: 100px;
+	}
+	.collection_image img {
+		width: 177px;
+		margin-top: 15px;
+	}
+	#collection .row .col-lg-4 {
+		width: 30.333%;
+		padding-left: 92px;
+	}
+					/* ================ learn part start ==================== */
+	#learn {
+		padding-top: 39px;
+		padding-bottom: 54px;
+		margin-top: 46px;
+		margin-bottom: 30px;
+	}
+	.common_head h2 {
+		font-size: 16px;
+	}
+	.learn_text .common_head p {
+		width: 298px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.learn_text .learn_button a {
+		padding: 12px 19px;
+		font-size: 13px;
+		border-radius: 18px;
+		margin-top: 11px;
+	
+	}
+	#learn .learn_image img {
+		width: 100%;
+		margin-top: 10px;
+	}
+				/* ========================== browse part start ============================ */
+	.browse_card {
+		margin-top: 27px;
+	}
+	#browse .browse_card img {
+		width: 100%;
+	}
+	.browse_card p {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+						/* =============== work part start ===================== */
+	.work_card .card_image img {
+		width: 100%;
+	}
+	.card_text h2 {
+		font-size: 18px;
+	}
+	.card_text p {
+		font-size: 12px;
+	}
+					/* ====================  mail part start ================== */
+	#mail {
+		margin-top: 100px;
+	
+	}
+	#mail .common_head p {
+		width: 293px;
+		line-height: 24px;
+	}
+	.common_head p {
+		font-size: 11px;
+	}
+	.mail_bar button {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	.mail_bar input {
+		padding-left: 11px;
+		font-size: 11px;
+	}
+	.mail_bar {
+		width: 257px;
+	}
+						/* footer part start */
+	.footer_text h2 {
+		font-size: 17px;
+	}
+	.footer_text p {
+		width: 247px;
+		font-size: 12px;
+		margin-top: 25px;
+	}
+	.insta_image {
+		flex-wrap: wrap;
+	}
+	.insta_image img {
+		width: 133px;
+	}
+	.insta_head h2 {
+		margin-top: 14px;
+	}
+
+
+}
+@media (min-width: 1200px) and (max-width: 1399px)  {
+	.browse_card img {
+		width: 336px;
+	}
+
+
+	.work_card img {
+		width: 359px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
