@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Sixtyfour+Convergence&family=Xanh+Mono:ital@0;1&display=swap');
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/body-BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.menu .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu .play {
+    font-size: 157px;
+    font-family: "Xanh Mono", monospace;
+    font-weight: 900;
+    color: #FF6500;
+    background-color: #1E3E62;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 37px;
+    cursor: pointer;
+}
+.menu .text p{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #6ce93a;
+    width: 414px;
+    line-height: 31px;
+    letter-spacing: 2px;
+}
+
+
+
+.main {
+    width: 600px;
+    padding: 30px;
+    border: 2px solid gray;
+    background-color: #0B192C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.main input {
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #1E3E62;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 3px 20px;
+}
+.main button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background: #6225e6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+}
+.main button:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fbc638;
+}
+.playerOne{
+    display: none;
+}
+.playerTwo {
+    display: none;
+}
+.playerThree{
+    display: none;
+}
+.error{
+    font-size: 27px;
+    color:red;
+    display: flex;
+    gap: 15px;
+    font-family: sans-serif;
+}
+.error i{
+    color: orangered;
+}
+
+
