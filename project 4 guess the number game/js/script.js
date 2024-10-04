@@ -2,19 +2,21 @@
 // ======= playerOne dom
 let playerOne       = document.querySelector(".playerOne")
 let playerOneInput  = document.querySelector(".playerOneInput")
-let playerOneButton = document.querySelector(".playerOneButton")
 // ======= playerTwo dom
 let playerTwo       = document.querySelector('.playerTwo')
-let playerTwoInput  = document.querySelector('.playerTwo')
-let playerTwoButton = document.querySelector('.playerTwo')
+let playerTwoInput  = document.querySelector('.playerTwoInput')
+let playerTwoChance = document.querySelector('.playerTwoChance')
 // ======= playerThree dom
 let playerThree       = document.querySelector('.playerThree')
 let playerThreeInput  = document.querySelector('.playerThreeInput')
-let playerThreeButton = document.querySelector('.playerThreeButton')
+let playerThreeChance = document.querySelector('.playerThreeChance')
 // ======= Other doms
 let error = document.querySelector('.error')
 let start = document.querySelector('.play')
 let menu  = document.querySelector('.menu')
+// ======= end dom
+let end   = document.querySelector('.end')
+let endText   = document.querySelector('.endText')
 // =======================  DOMS End ======================
 
 // ======================= Function starts ================
@@ -44,5 +46,22 @@ let playerOnekey = (key)=>{
 }
 // ======= playerTwo function
 let playerTwoClick = ()=>{
-    
+    if(playerTwoInput.value == ''){
+        error.innerHTML = "Please give a number first" + '<i class="fa-solid fa-triangle-exclamation"></i>'
+    }else{
+        error.innerHTML = ''
+        if(playerTwoInput.value == playerOneInput.value){
+            playerTwoInput.value = ''
+            endText.innerHTML = 'Player 2 Win' + '<img src="images/win.gif" alt="">'
+            end.style         = 'display:block'
+        }else{
+            playerTwoChance.innerHTML++
+            if(playerTwoChance.innerHTML > 5){
+                playerTwo.style = 'display:none'
+                playerThree.style = 'display:flex'
+            }
+        }
+    }
 }
+
+

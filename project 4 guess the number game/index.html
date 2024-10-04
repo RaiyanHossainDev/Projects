@@ -24,14 +24,17 @@
         <button class="playerOneButton" onclick="playerOneClick()">Pass <i class="fa-solid fa-angles-right"></i></button>
     </div>
     <div class="main playerTwo">
-        <h1>Player -- 2</h1><span class="chance">Chances left 0/5</span>
+        <h1>Player -- 2</h1><span>Chances left <span class="playerTwoChance">0</span>/5</span>
         <input type="number" class="playerTwoInput"  placeholder="Guess">
-        <button class="playerTwoButton">Check <i class="fa-solid fa-angles-right"></i></button>
+        <button class="playerTwoButton" onclick="playerTwoClick()">Check <i class="fa-solid fa-angles-right"></i></button>
     </div>
     <div class="main playerThree">
-        <h1>Player -- 3</h1><span class="chance">Chances left 0/5</span>
+        <h1>Player -- 3</h1><span>Chances left <span class="playerThreeChance">0</span>/5</span>
         <input type="number" class="playerThreeInput"  placeholder="Guess">
         <button class="playerThreeButton">Check <i class="fa-solid fa-angles-right"></i></button>
+    </div>
+    <div class="end">
+        <h1 class="endText"></h1>
     </div>
 
 
