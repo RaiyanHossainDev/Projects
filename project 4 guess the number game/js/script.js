@@ -63,5 +63,10 @@ let playerTwoClick = ()=>{
         }
     }
 }
+let playerTwoKey = (key)=>{
+    if(key.key == 'Enter'){
+        playerTwoClick()
+    }
+}
 
 
