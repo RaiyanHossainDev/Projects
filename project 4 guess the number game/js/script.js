@@ -42,7 +42,7 @@ let playerOneClick = ()=>{
 let playerOnekey = (key)=>{
     if(key.key == "Enter"){
         playerOneClick()
-    }
+}
 }
 // ======= playerTwo function
 let playerTwoClick = ()=>{
@@ -52,13 +52,14 @@ let playerTwoClick = ()=>{
         error.innerHTML = ''
         if(playerTwoInput.value == playerOneInput.value){
             playerTwoInput.value = ''
-            endText.innerHTML = 'Player 2 Win' + '<img src="images/win.gif" alt="">'
+            endText.innerHTML = 'Player 2 Win'
             end.style         = 'display:block'
         }else{
             playerTwoChance.innerHTML++
-            if(playerTwoChance.innerHTML > 5){
-                playerTwo.style = 'display:none'
+            if(playerTwoChance.innerHTML > 4){
+                playerTwo.style   = 'display:none'
                 playerThree.style = 'display:flex'
+                end.style         = 'display:none'
             }
         }
     }
@@ -68,5 +69,28 @@ let playerTwoKey = (key)=>{
         playerTwoClick()
     }
 }
-
-
+// ====== playerThree function
+let playerThreeClick = ()=>{
+    if(playerThreeInput.value == ''){
+        error.innerHTML = "Please give a number first" + '<i class="fa-solid fa-triangle-exclamation"></i>'
+    }else{
+        error.innerHTML = ''
+        if(playerThreeInput.value == playerOneInput.value){
+            playerThreeInput.value = ''
+            endText.innerHTML = 'Player 3 Win'
+            end.style         = 'display:block'
+        }else{
+            playerThreeChance.innerHTML++
+            if(playerThreeChance.innerHTML > 4){
+                playerThreeChance.innerHTML = 5
+                end.style         = 'display:block'
+                endText.innerHTML = 'Player 1 Win'
+            }
+        }
+    }
+}
+let playerThreeKey = (alu)=>{
+    if(alu.key == 'Enter'){
+        playerThreeClick()
+    }
+}
