@@ -1,0 +1,135 @@
+/* ======================== font family start */
+
+
+/* ======================== font family end */
+/* ======================== common css start =========== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+title{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    background: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ======================== common css start =========== */
+/* ======================== add list part start   ======= */
+.add_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.add_head h1{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+.add_head .event {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+}
+.add_head .event input {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    outline: none;
+    width: 430px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+}
+.add_head .event button {
+    background-color: #73EC8B;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #fff;
+    width: 70px;
+}
+.add_head .event button:active{
+    opacity: .8;
+}
+/* ======================== add list part end     ======= */
+/* ======================== sngle todo part start ========*/
+.error{
+    color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.single_todo {
+    padding: 10px 20px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single_todo input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    color: #fff;
+    background-color: transparent;
+    width: 300px;
+}
+.single_todo button {
+    padding: 5px 8px;
+    color: black;
+    font-size: 15px;
+    background-color: #F3C623;
+    border: none;
+    border-radius: 10px;
+}
+.single_todo button i{
+    margin-left: 5px;
+}
+.single_todo .delete {
+    background-color: red;
+    color: #fff;
+    margin-left: 5px;
+}
+.single_todo .time {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+}
+
+
+
+
+
+
+
+
+

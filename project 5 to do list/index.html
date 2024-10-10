@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- ============ list taker ============= -->
+     <div class="error"></div>
+    <div class="add_head">
+        <h1>Add a Work <i class="fa-solid fa-list-check"></i></h1>
+        <div class="event">
+            <input placeholder="add a job" onkeydown="addKey(event)" class="addInput" type="text">
+            <button onclick="add()" class="addButton">Add<i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="toDoList">
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
