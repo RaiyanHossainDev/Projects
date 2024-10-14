@@ -3,8 +3,11 @@ let addInput    = document.querySelector('.addInput')
 let error       = document.querySelector('.error')
 let eve         = document.querySelector('.event')
 let toDoList    = document.querySelector('.toDoList')
+let done        = document.querySelector('.done')
+let job         = document.querySelector('.job')
 
-// ========================== adding job function
+
+// ========================== adding function
 let add = ()=>{
     if(addInput.value == ""){
         error.innerHTML = 'Please enter a text' + '<i class="fa-solid fa-circle-exclamation"></i>'
@@ -12,6 +15,7 @@ let add = ()=>{
     }else{
         error.innerHTML = ''
         eve.style       = 'border: 2px solid black'
+        job.innerHTML++
         // ==============  making element
         let singleTodo       = document.createElement('div')
         let toDoInput        = document.createElement('input')
@@ -41,9 +45,28 @@ let add = ()=>{
         // ==============  delete function
         toDoButtonDelete.addEventListener('click' , ()=>{
             singleTodo.remove()
+            done.innerHTML++
+        })
+        // ============== edit function
+        toDoButtonEdit.addEventListener('click' , ()=>{
+            if(toDoButtonEdit.innerHTML  == 'Edit' + '<i class="fa-solid fa-pen-to-square"></i>'){
+                toDoButtonEdit.innerHTML = 'Save' + '<i class="fa-solid fa-floppy-disk"></i>'
+                toDoButtonEdit.style     = 'background-color:lime;'
+                toDoInput.removeAttribute('readonly' , 'readonly') 
+            }else{
+                if(toDoInput.value == ''){
+                    singleTodo.style = 'border-color:red'
+                }else{
+                    singleTodo.style = 'border-color:pink'
+                    toDoButtonEdit.innerHTML = 'Edit' + '<i class="fa-solid fa-pen-to-square"></i>'
+                    toDoButtonEdit.style     = 'background-color:#F3C623;'
+                    toDoInput.setAttribute('readonly' , 'readonly')
+                }
+            }
         })
     }
 }
+// =========== Enter Key
 let addKey = (item)=>{
     if(item.key == "Enter"){
         add()

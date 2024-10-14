@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO List</title>
+    <!-- ================== icon ================ -->
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <!-- ================== Css Links =========== -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
-    <!-- ============ list taker ============= -->
+    <!-- ============ list Adder ============= -->
      <div class="error"></div>
     <div class="add_head">
-        <h1>Add a Work <i class="fa-solid fa-list-check"></i></h1>
+        <div class="add_text">
+            <h1>Add a Work <i class="fa-solid fa-list-check"></i></h1>
+            <h2>Work Done <span class="done">0</span>/<span class="job">0</span></h2>
+        </div>
         <div class="event">
             <input placeholder="add a job" onkeydown="addKey(event)" class="addInput" type="text">
             <button onclick="add()" class="addButton">Add<i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
 
+    <!-- ======= To Do List -->
     <div class="toDoList">
     </div>
 
 
 
-
+    <!-- ======== JS link ======= -->
     <script src="js/script.js"></script>
 </body>
 </html>
