@@ -1,0 +1,30 @@
+.menu {
+    @apply pt-[50px] sm:hidden lg:block
+}
+.row {
+    @apply flex justify-between items-center
+}
+.menu .row ul {
+    @apply flex gap-[39px]
+} 
+.menu .row ul li a{
+    @apply text-[#4F5665] font-rubik text-[16px] transition-all
+}
+.menu .row ul li a:hover {
+    @apply text-[20px]
+}
+.menu .row .menu_buttons {
+    @apply flex gap-[30px]
+}
+.menu_buttons a {
+    @apply font-medium py-[13px] px-[45px] transition duration-[.2s] border-[1px] border-transparent  rounded-[50px]
+}
+.menu_buttons .btn-two {
+    @apply text-[#F53855] border-[#F53855]
+}
+.btn-two:hover {
+    @apply border-transparent text-[#0B132A]
+}
+.btn-one:hover {
+    @apply text-[#F53855] border-[1px] border-[#F53855] rounded-[50px]
+}

@@ -1,0 +1,36 @@
+.res_menu {
+    @apply lg:hidden pt-[50px]
+}
+.row .res_buttons {
+    @apply flex gap-[30px]
+}
+.row .res_buttons a {
+    @apply font-medium py-[4px] px-[13px] transition duration-[.2s] sm:border-[1px]  rounded-[50px]
+}
+.res_buttons .res_btn-two {
+    @apply text-[#F53855] border-[#F53855]
+}
+.res_buttons .res_btn-one {
+    @apply border-transparent
+}
+.res_btn-two:hover {
+    @apply border-transparent text-[#0B132A]
+}
+.res_btn-one:hover {
+    @apply text-[#F53855] border-[1px] border-[#F53855]
+}
+.row .res_dropdown_btn {
+    @apply text-2xl cursor-pointer transition-all
+}
+.row .res_dropdown_btn:hover {
+    @apply shadow-[5px_7px_13px_0px_rgba(0,_0,_0,_0.8)]
+}
+.res_menu ul {
+    @apply flex sm:gap-[20px] flex-col mt-[10px]
+}
+.res_menu ul li a {
+    @apply text-[#4F5665] font-rubik text-[16px] transition-all
+}
+.res_menu ul li a:hover {
+    @apply text-[20px]
+}
