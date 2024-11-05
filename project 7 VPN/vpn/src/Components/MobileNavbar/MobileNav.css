@@ -5,7 +5,7 @@
     @apply flex gap-[30px]
 }
 .row .res_buttons a {
-    @apply font-medium py-[4px] px-[13px] transition duration-[.2s] sm:border-[1px]  rounded-[50px]
+    @apply sm:text-[14px] md:text-[16px] font-medium py-[4px] px-[13px] transition duration-[.2s] sm:border-[1px]  rounded-[50px]
 }
 .res_buttons .res_btn-two {
     @apply text-[#F53855] border-[#F53855]

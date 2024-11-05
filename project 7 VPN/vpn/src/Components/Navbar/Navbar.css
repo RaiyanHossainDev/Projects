@@ -4,20 +4,23 @@
 .row {
     @apply flex justify-between items-center
 }
-.menu .row ul {
-    @apply flex gap-[39px]
+.menu .row .main_menu {
+    @apply flex xl:gap-[39px] lg:gap-[25px]
 } 
-.menu .row ul li a{
+.menu .row .main_menu li a{
     @apply text-[#4F5665] font-rubik text-[16px] transition-all
 }
-.menu .row ul li a:hover {
-    @apply text-[20px]
+.menu .row li a:hover {
+    @apply text-[20px] text-black
+}
+.menu .row .main_menu li a:active {
+    @apply text-[18px]
 }
 .menu .row .menu_buttons {
-    @apply flex gap-[30px]
+    @apply flex xl:gap-[30px] lg:gap-[20px]
 }
 .menu_buttons a {
-    @apply font-medium py-[13px] px-[45px] transition duration-[.2s] border-[1px] border-transparent  rounded-[50px]
+    @apply font-medium xl:py-[13px] lg:py-[10px] xl:px-[45px] lg:px-[25px] transition duration-[.2s] border-[1px] border-transparent  rounded-[50px]
 }
 .menu_buttons .btn-two {
     @apply text-[#F53855] border-[#F53855]

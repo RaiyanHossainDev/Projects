@@ -6,11 +6,8 @@ import { FaBarsProgress } from "react-icons/fa6";
 
 const mobileNavbar = () => {
   // ================= useStates
-  const [toggle,setToggle] = useState('')
+  const [toggle,setToggle] = useState(false)
 
-  let handleToggle = ()=>{
-    setToggle(!toggle)
-  }
 
   return (
     <>
@@ -20,7 +17,7 @@ const mobileNavbar = () => {
             <div className="logo">
               <Link to={'/'}><img src="images/Logo.png" alt="" /></Link>
             </div>
-            <div onClick={handleToggle} className="res_dropdown_btn">
+            <div onClick={()=>setToggle(!toggle)} className="res_dropdown_btn">
               <FaBarsProgress />
             </div>
             <div className="res_buttons">
@@ -29,7 +26,7 @@ const mobileNavbar = () => {
             </div>
           </div>
             {
-              toggle &&
+              toggle  &&
                 <ul>
                   <li><Link to={'/'}>About</Link></li>
                   <li><Link to={'/'}>Features</Link></li>

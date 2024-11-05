@@ -12,15 +12,15 @@ const Navbar = () => {
                         <Link to={'/'}><img src="images/Logo.png" alt="logo" /></Link>
                     </div>
                     <ul className='main_menu'>
-                        <li><Link>About</Link></li>
-                        <li><Link>Features</Link></li>
-                        <li><Link>Pricing</Link></li>
-                        <li><Link>Testimonials</Link></li>
-                        <li><Link>Help</Link></li>
+                        <li><Link to={'#'}>About</Link></li>
+                        <li><Link to={'#'}>Features</Link></li>
+                        <li><Link to={'#'}>Pricing</Link></li>
+                        <li><Link to={'#'}>Testimonials</Link></li>
+                        <li><Link to={'#'}>Help</Link></li>
                     </ul>
-                    <div className="res_menu_buttons">
-                        <Link className='btn-one'>Sign In</Link>
-                        <Link className='btn-two'>Sign Up</Link>
+                    <div className="menu_buttons">
+                        <Link to={'#'} className='btn-one'>Sign In</Link>
+                        <Link to={'#'} className='btn-two'>Sign Up</Link>
                     </div>
                 </div>
             </div>
