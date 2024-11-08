@@ -1,0 +1,6 @@
+.common_head h2 {
+    @apply text-[35px] font-medium font-rubik text-[#0B132A]
+}
+.common_head p {
+    @apply text-[16px] font-normal font-rubik text-secendary w-[350px] sm:w-[555px] text-center
+}

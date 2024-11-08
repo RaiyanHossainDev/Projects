@@ -1,0 +1,18 @@
+#raiyan_banner {
+    @apply mt-[88px]
+}
+.banner_row {
+    @apply flex justify-between items-center flex-wrap flex-col-reverse gap-[25px] lg:flex-nowrap lg:flex-row lg:gap-0
+}
+.banner_row .banner_text {
+    @apply flex flex-col items-center lg:items-start
+}
+.banner_row .banner_text h1 {
+    @apply text-[30px] text-center lg:text-start lg:text-[50px] font-medium font-rubik w-full lg:w-[555px]
+}
+.banner_row .banner_text p {
+    @apply text-secendary text-[16px] text-center lg:text-start font-normal w-full lg:w-[555px] mt-[20px] mb-[50px]
+}
+.banner_row .banner_text a {
+    @apply py-[17px] px-[77px] bg-brand rounded-[10px] text-[16px] font-bold font-rubik text-white shadow-[0px_29px_58px_-9px_#F53838]
+}

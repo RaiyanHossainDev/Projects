@@ -1,0 +1,21 @@
+#raiyan_feture {
+    @apply lg:mt-[96px]
+}
+.feture_row {
+    @apply flex lg:justify-between items-center flex-wrap gap-[50px] lg:gap-[30px] lg:flex-nowrap 
+}
+.feture_row .feture_text {
+    @apply flex flex-col gap-[20px]
+}
+.feture_row .feture_text h2 {
+    @apply text-[25px] lg:text-[35px] font-medium font-rubik lg:w-[383px]
+}
+.feture_row .feture_text p {
+    @apply lg:text-[16px] font-normal font-rubik text-secendary lg:w-[428px]
+}
+.feture_text .feture_marks .single_mark {
+    @apply flex gap-[10px] items-center text-[20px] font-normal font-rubik text-[#2FAB73] 
+}
+.feture_text .feture_marks {
+    @apply flex flex-col gap-[21px]
+}

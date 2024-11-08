@@ -1,5 +1,5 @@
 .menu {
-    @apply pt-[50px] sm:hidden lg:block
+    @apply pt-[50px] hidden lg:block
 }
 .row {
     @apply flex justify-between items-center

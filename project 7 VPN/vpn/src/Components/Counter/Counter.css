@@ -1,0 +1,21 @@
+#raiyan_banner {
+    @apply lg:mt-[103px] rounded-[10px]
+}
+.counter_row {
+    @apply flex justify-around items-center gap-[60px] shadow-none flex-col lg:flex-row lg:shadow-[0px_29px_21px_-1px_rgba(0,_0,_0,_0.1)] rounded-[10px] py-[37px] px-[91px]
+}
+.single_counter {
+    @apply flex items-center gap-[36px] border-[2px] lg:border-none py-[60px] px-[100px] lg:p-0 rounded-2xl 
+}
+.single_counter .counter_icon {
+    @apply h-[30px] lg:h-[55px] w-[30px] lg:w-[55px] rounded-[50%] bg-[#FFECEC] flex justify-center items-center text-sm lg:text-lg text-brand
+}
+.single_counter .counter_text h2 {
+    @apply text-[25px] font-bold font-rubik text-[#0B132A]
+}
+.single_counter .counter_text p {
+    @apply text-[20px] font-normal font-rubik text-secendary
+}
+.counter_row .counter_line {
+    @apply h-[125px] w-[2px] bg-[#EEEFF2] hidden lg:block
+}

@@ -1,0 +1,35 @@
+#raiyan_plan {
+    @apply pt-[211px]
+}
+
+.common_head {
+    @apply flex flex-col justify-center items-center gap-[20px]
+}
+.plan_row {
+    @apply flex justify-between items-center mt-[60px] flex-col  lg:flex-row gap-[30px] lg:gap-[20px]
+}
+.single_plan {
+    @apply pt-[80px] pb-[50px] flex flex-col justify-between items-center w-[330px] lg:h-[760px] border-[2px] border-[#DDDDDD] rounded-[10px]
+}
+.single_plan .plan_text {
+    @apply flex flex-col items-center
+}
+.single_plan h2 {
+    @apply text-[18px] font-medium font-rubik text-[#0B132A] my-[30px]
+}
+.single_plan .plan_check {
+    @apply flex flex-col gap-[10px]
+}
+.single_plan .plan_check .single_plan_check {
+    @apply text-[14px] font-normal font-rubik text-secendary flex gap-[20px] items-center
+}
+.single_plan h3 {
+    @apply text-[25px] font-medium font-rubik text-[#0B132A]
+}
+.single_plan a {
+    @apply py-[7px] px-[30px] lg:py-[13px] lg:px-[63px] text-brand font-bold font-rubik border-[2px] border-brand rounded-[50px]
+}
+.single_plan .plan_button {
+    @apply flex flex-col gap-[20px] items-center
+}
+
