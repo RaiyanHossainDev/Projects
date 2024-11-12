@@ -1,0 +1,6 @@
+#raiyan_image {
+    @apply mt-[115px]   
+}
+#raiyan_image .img_row {
+    @apply flex justify-between items-center
+}

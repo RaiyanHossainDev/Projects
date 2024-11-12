@@ -1,0 +1,73 @@
+#raiyan_slider {
+    @apply mt-[50px] pb-[297px]
+}
+#raiyan_slider .common_head h2{
+    @apply w-[448px] text-center
+}
+.main_slider {
+    @apply mt-[60px] relative
+}
+.single_slide {
+    @apply transition-all duration-[.3s] p-[30px] rounded-[10px] border-[2px] border-[#DDDDDD] lg:w-[400px] lg:h-[230px]
+}
+.single_slide:hover {
+    @apply border-brand
+}
+.single_slide .head {
+    @apply flex justify-between
+}
+.single_slide .head .profile {
+    @apply flex gap-[20px]
+}
+.single_slide .head .profile .name h2 {
+    @apply text-[18px] font-medium font-rubik text-[#0B132A]
+}
+.single_slide .head .profile .name p{
+    @apply text-[14px] text-[#4F5665] font-normal font-rubik
+}
+.single_slide .head .rating {
+    @apply flex items-center gap-[10px]
+}
+.slick-dots {
+    @apply !flex gap-[15px] mt-[112px]
+}
+.slick-dots li button {
+    @apply !text-[0] w-[15px] h-[15px] rounded-full bg-[#DDE0E4]
+}
+.slick-dots .slick-active button {
+    @apply bg-brand
+}
+.slick-arrow {
+    @apply text-[0] absolute right-0 bottom-[-85px] w-[60px] h-[60px] rounded-full border-2  border-brand transition-all;
+    
+}
+.slick-prev {
+    @apply right-[100px]
+}
+.slick-prev::after {
+    content: '';
+    background-image: url(images/arrowRed.png); 
+    @apply w-[20px] h-[20px] inline-block bg-no-repeat mt-[4px] transition-all
+}
+.slick-prev:hover::after {
+    background-image: url(images/arrowWhite.png);
+    transform: rotate(-180deg);
+}
+.slick-prev:hover {
+    @apply bg-brand
+}
+
+
+.slick-next::after {
+    content: '';
+    background-image: url(images/arrowRed.png); 
+    transform: rotate(-180deg);
+    @apply w-[20px] h-[20px] inline-block bg-no-repeat mt-[4px] transition-all
+}
+.slick-next:hover::after {
+    background-image: url(images/arrowWhite.png);
+    transform: rotate(0deg);
+}
+.slick-next:hover {
+    @apply bg-brand
+}

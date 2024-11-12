@@ -1,0 +1,115 @@
+#Raiyan_map {
+    @apply mt-[150px]
+}
+#Raiyan_map .common_head h2 {
+    @apply w-full lg:w-[383px] text-center
+}
+.Map {
+    @apply relative
+}
+.Map .main_map{
+    @apply mx-auto mt-[156px]
+}
+.Map .map_dot {
+    @apply absolute ;
+    animation: ping ease infinite .8s;
+}
+@keyframes ping {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 10;
+    }
+}
+.dot1 {
+    @apply w-[50px] left-[285px] top-[137px]
+}
+.dot2 {
+    @apply w-[20px] left-[172px] top-[96px]
+}
+.dot3 {
+    @apply w-[26px] left-[258px] top-[83px]
+}
+.dot4 {
+    @apply w-[20px] left-[402px] top-[2px]
+}
+.dot5 {
+    @apply w-[35px] left-[332px] top-[93px]
+}
+.dot6 {
+    @apply w-[30px] left-[424px] top-[137px]
+}
+.dot7 {
+    @apply w-[27px] left-[386px] top-[213px]
+}
+.dot8 {
+    @apply w-[25px] left-[327px] top-[238px]
+}
+.dot9 {
+    @apply w-[34px] left-[418px] top-[316px]
+}
+.dot10 {
+    @apply w-[43px] left-[444px] top-[365px]
+}
+.dot11 {
+    @apply w-[25px] left-[501px] top-[362px]
+}
+.dot12 {
+    @apply w-[30px] left-[441px] top-[425px]
+}
+.dot13 {
+    @apply w-[35px] left-[500px] top-[30px]
+}
+.dot14 {
+    @apply w-[25px] left-[554px] top-[20px]
+}
+.dot15 {
+    @apply w-[25px] left-[500px] top-[85px]
+}
+.dot16 {
+    @apply w-[36px] left-[606px] top-[274px]
+}
+.dot17 {
+    @apply w-[55px] left-[688px] top-[283px]
+}
+.dot18 {
+    @apply w-[45px] left-[692px] top-[386px]
+}
+.dot19 {
+    @apply w-[42px] left-[661px] top-[100px]
+}
+.dot20 {
+    @apply w-[42px] left-[693px] top-[172px]
+}
+.dot21 {
+    @apply w-[36px] left-[857px] top-[257px]
+}
+.dot22 {
+    @apply w-[58px] left-[898px] top-[129px]
+}
+.dot23 {
+    @apply w-[43px] left-[762px] top-[134px]
+}
+.dot24 {
+    @apply w-[21px] left-[878px] top-[86px]
+}
+.dot25 {
+    @apply w-[23px] left-[938px] top-[226px]
+}
+.dot26 {
+    @apply w-[29px] left-[1004px] top-[88px]
+}
+.dot27 {
+    @apply w-[36px] left-[1127px] top-[88px]
+}
+.dot28 {
+    @apply w-[29px] left-[949px] top-[342px]
+}
+.dot29 {
+    @apply w-[49px] left-[973px] top-[411px]
+}
+.dot30 {
+    @apply w-[35px] left-[1050px] top-[431px]
+}

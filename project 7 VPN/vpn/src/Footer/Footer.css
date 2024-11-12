@@ -1,0 +1,10 @@
+#ryan_footer {
+    @apply pt-[180px] pb-[140px] px-[150px] bg-[#F8F8F8]
+}
+
+.footer_row {
+    @apply flex justify-between items-center
+}
+.footer_row .footer_head .medias {
+    @apply flex gap-[20px] mt-[30px]
+}
