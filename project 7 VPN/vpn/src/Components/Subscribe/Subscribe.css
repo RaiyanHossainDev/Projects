@@ -6,8 +6,8 @@
     @apply relative
 }
 .subs_row {
-    @apply rounded-[10px] bg-white flex items-center justify-between  w-full py-[58px] px-[70px]
-    absolute top-[-135px] left-0 shadow-[0px_27px_58px_-13px_rgba(0,_0,_0,_0.1)]
+    @apply gap-[50px] lg:gap-0 flex-wrap lg:flex-nowrap rounded-[10px] bg-white flex items-center justify-between  w-full py-[58px] px-[70px]
+    absolute top-[-194px] lg:top-[-135px] left-0 shadow-[0px_27px_58px_-13px_rgba(0,_0,_0,_0.1)]
 }
 .subs_row .sub_head h2{
     @apply text-[35px] font-medium font-rubik text-[#0B132A] w-[372px]
@@ -16,7 +16,7 @@
     @apply text-[16px] font-normal font-rubik text-secendary w-[350px] sm:w-[555px] mt-[20px]
 }
 .subs_row .sub_button a {
-    @apply transition-all duration-[.3s] py-[17px] px-[66px] bg-brand rounded-[10px] text-white font-bold font-rubik border-[2px] border-transparent
+    @apply mt-[30px] transition-all duration-[.3s] py-[17px] px-[66px] bg-brand rounded-[10px] text-white font-bold font-rubik border-[2px] border-transparent
 }
 .subs_row .sub_button a:hover {
     @apply  bg-white border-brand text-brand

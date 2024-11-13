@@ -2,5 +2,8 @@
     @apply mt-[115px]   
 }
 #raiyan_image .img_row {
-    @apply flex justify-between items-center
+    @apply flex justify-between items-center flex-wrap lg:flex-nowrap
+}
+.img_row img {
+    @apply w-[150px]
 }

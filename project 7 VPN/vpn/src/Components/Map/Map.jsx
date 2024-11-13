@@ -15,6 +15,7 @@ const Map = () => {
                 </div>
                 <div className="Map">
                     <img className='main_map' src="images/map.png" alt="" />
+                    <img className='dottedMap' src="images/dotted_map.png" alt="" />
                     <img className='map_dot dot1' src="images/map_dot.png" alt="map dot" />
                     <img className='map_dot dot2' src="images/map_dot.png" alt="map dot" />
                     <img className='map_dot dot3' src="images/map_dot.png" alt="map dot" />

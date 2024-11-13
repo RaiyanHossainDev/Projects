@@ -17,8 +17,7 @@ const Myslider = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         speed: 300,
-      };
-      
+    };
 
   return (
     <section id='raiyan_slider'>
@@ -122,10 +121,12 @@ const Myslider = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='single_slide'>
+                        <div className='single_slide block'>
                             <div className="head">
                                 <div className="profile">
-                                    <img src="images/christy.png" alt="robert" />
+                                    <div className="image">
+                                        <img src="images/christy.png" alt="robert" />
+                                    </div>
                                     <div className="name">
                                         <h2>Monica Jackson</h2>
                                         <p>NewYork , USA</p>

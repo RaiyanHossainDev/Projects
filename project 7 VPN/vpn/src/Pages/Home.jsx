@@ -7,7 +7,7 @@ import Map from '../Components/Map/Map'
 import Image from '../Components/Image/Image'
 import Myslider from '../Components/MySlider/Myslider'
 import Subscribe from '../Components/Subscribe/Subscribe'
-import Footer from '../Footer/Footer'
+import Footer from '../Components/Footer/Footer'
 
 
 const Home = () => {
