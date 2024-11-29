@@ -1,0 +1,47 @@
+#register {
+    @apply flex justify-center items-center h-screen bg-cover bg-center bg-no-repeat;
+    background-image: url(images/reg_bg.jpg);
+}
+.register {
+    @apply bg-[#0C172C] px-[58px] pt-[40px] rounded-xl
+    relative
+    ;
+}
+.register .register_head {
+    @apply pb-[52px]
+}
+.register .register_head h2{
+    @apply text-[25px] font-semibold font-manrope text-white
+}
+.register form .user_box {
+    @apply flex flex-col
+}
+.register form .user_box  label{
+    @apply text-[#ADADAD] text-[16px] font-manrope font-semibold
+}
+.register form .user_box input {
+    @apply outline-none bg-transparent font-poppins text-[16px] text-[#F0F0F0]
+    w-[497px] py-[11px]
+    border-b-[1px] border-b-[#595959]
+}
+.register form button {
+    @apply rounded-[10px] bg-[#27395B] px-[172px] py-[25px] 
+    text-[16px] text-[#D0A920] font-semibold font-poppins
+    mt-[44px] mb-[20px] transition-all duration-100
+    hover:scale-110 ;
+}
+.register img {
+    @apply absolute bottom-0 right-0 
+
+}
+.register h3 {
+    @apply mb-[120px] text-[16px] font-poppins font-semibold text-white
+}
+.register h3 a {
+    @apply  text-[#D0A920]
+}
+.register form .user_box svg {
+    @apply text-[20px] text-gray-500 
+    absolute right-3 top-[50%] translate-y-[-50$]
+    cursor-pointer
+}

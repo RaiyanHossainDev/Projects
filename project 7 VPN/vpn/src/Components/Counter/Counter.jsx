@@ -19,7 +19,7 @@ const Counter = () => {
                             <FaUser />
                         </div>
                         <div className="counter_text">
-                            <h2><CountUp end={90} />+</h2>
+                            <h2><CountUp duration={9} end={90} />+</h2>
                             <p>Users</p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const Counter = () => {
                             <FaLocationDot />
                         </div>
                         <div className="counter_text">
-                            <h2><CountUp end={30} />+</h2>
+                            <h2><CountUp duration={9} end={30} />+</h2>
                             <p>Locations</p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Counter = () => {
                             <FaServer />
                         </div>
                         <div className="counter_text">
-                            <h2><CountUp end={50} />+</h2>
+                            <h2><CountUp duration={9} end={50} />+</h2>
                             <p>Servers</p>
                         </div>
                     </div>
