@@ -42,6 +42,6 @@
 }
 .register form .user_box svg {
     @apply text-[20px] text-gray-500 
-    absolute right-3 top-[50%] translate-y-[-50$]
+    absolute right-3 top-[50%] 
     cursor-pointer
 }

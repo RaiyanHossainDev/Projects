@@ -1,0 +1,26 @@
+header {
+    @apply dark:bg-gray-800 transition-all
+}
+.header_row {
+    @apply flex justify-between px-[10px] border-y-[2px] dark:border-[#a3a3a3]
+}
+
+.header_row .header_search .searchBar {
+    @apply bg-[#00000033] w-[500px] h-[50px] rounded-[10px] flex
+    gap-2 items-center text-[20px] px-[10px] font-roboto 
+}
+.header_row .header_search .searchBar input {
+    @apply border-none outline-none bg-transparent w-full
+}
+.header_row .header_search .searchBar svg {
+    @apply cursor-pointer 
+}
+.header_row .user {
+    @apply flex gap-3 items-center
+}
+.header_row .user .userName h2 {
+    @apply font-manrope font-bold text-[20px] dark:text-white transition-all
+}
+.header_row .user .logout svg {
+    @apply dark:text-white transition-all
+}

@@ -1,0 +1,50 @@
+#login {
+    @apply h-screen bg-cover bg-center bg-no-repeat 
+    flex justify-center items-center
+    ;
+    background-image: url(/images/reg_bg.jpg);
+}
+.login {
+    @apply rounded-[40px] bg-white py-[27px] px-[42px]
+}
+.login .login_row {
+    @apply border-y-[2px] border-y-[#FCC737] py-[27px]
+}
+.login_row .login_head h2 {
+    @apply text-[26px] font-roboto font-semibold mb-[51px]
+}
+.login_row form .user {
+    @apply flex flex-col gap-10
+}
+.login_row form .user .user_box {
+    @apply flex flex-col
+}
+.login_row form .user .user_box label {
+    @apply text-[#434343] text-[26px] font-roboto font-bold
+}
+.login_row form .user .user_box input {
+    @apply border-none outline-none bg-[#FEF3E2] rounded-[30px]
+    h-[52px] w-[424px] text-[17px] font-roboto pl-[25px]
+}
+.login_row form button {
+    @apply py-[15px] px-[120px] bg-[#FCC737] text-[30px]
+    font-roboto font-bold rounded-[40px] mt-[51px] 
+    ml-[50%] translate-x-[-50%]
+    hover:scale-110 
+    transition-all duration-100
+}
+.login .login_row .user p {
+    @apply text-[17px] font-semibold font-roboto
+}
+.login .login_row .user p a {
+    @apply text-[#FCC737]
+}
+.login_row form .user .user_box span {
+    @apply text-[#ff4d00] font-medium
+}
+.login_row form .user .user_box svg {
+    @apply absolute top-[70%] translate-y-[-50%] right-5 text-[20px] text-[#caa53f]
+    cursor-pointer ;
+    
+}
+

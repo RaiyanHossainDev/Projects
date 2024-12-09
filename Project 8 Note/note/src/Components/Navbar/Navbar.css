@@ -1,0 +1,14 @@
+#navbar {
+    @apply pt-[50px] bg-gray-300 h-screen pr-[20px] dark:bg-gray-800 transition-all
+}
+#navbar ul {
+    @apply flex flex-col gap-2
+}
+#navbar ul li .link {
+    @apply text-[25px] text-gray-600 flex items-center gap-10 w-[280px] h-[54px]
+    transition-all duration-200 dark:text-white
+    pl-[12px] rounded-r-[20px] 
+}
+#navbar .modeButton {
+    @apply px-[20px] py-[5px] text-[30px] font-bold ml-[10px] rounded-[30px] mt-[20px]
+}

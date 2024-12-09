@@ -4,7 +4,6 @@ import Register from '../Components/Register/Register'
 const Home = () => {
   return (
     <div>
-        <Register/>
     </div>
   )
 }

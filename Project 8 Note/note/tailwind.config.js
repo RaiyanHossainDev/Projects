@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode:'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,12 +14,13 @@ export default {
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
-        '2xl': '6rem',
+        '2xl': '1rem',
       },
     },
     fontFamily: {
       manrope: ["Manrope", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
+      roboto:  ["Roboto", "serif"],
     },
   },
   plugins: [],
