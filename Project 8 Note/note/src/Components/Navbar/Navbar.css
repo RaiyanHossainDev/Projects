@@ -1,5 +1,5 @@
 #navbar {
-    @apply pt-[50px] bg-gray-300 h-screen pr-[20px] dark:bg-gray-800 transition-all
+    @apply pt-[50px] bg-gray-300 h-[840px] pr-[20px] dark:bg-gray-800 transition-all
 }
 #navbar ul {
     @apply flex flex-col gap-2

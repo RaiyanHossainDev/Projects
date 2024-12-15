@@ -6,9 +6,10 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Login from './Components/Login/Login'
 import Register from './Components/Register/Register'
-import Pin from './Components/Pin/Pin'
-import All from './Components/All/All'
-import Bin from './Components/Bin/Bin'
+import AllPage from './Pages/AllPage'
+import PinPage from './Pages/PinPage'
+import BinPage from './Pages/BinPage'
+
 
 
 function App() {
@@ -18,9 +19,9 @@ function App() {
         <Route path='/register' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/' element={<Layout/>}>
-          <Route index element={<All/>} />
-          <Route path='/pinNote' element={<Pin/>} />
-          <Route path='/bin' element={<Bin/>} />
+          <Route index element={<AllPage/>} />
+          <Route path='/pinNote' element={<PinPage/>} />
+          <Route path='/bin' element={<BinPage/>} />
         </Route>
       </Route>
     )

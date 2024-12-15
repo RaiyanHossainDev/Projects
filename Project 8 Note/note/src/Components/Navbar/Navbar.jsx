@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
 
-  // ========== saving the mode when user  visitor
+  // ========== saving the mode when user visitor
   useEffect(() => {
     const savedMode = localStorage.getItem("mode") || "light";
     localStorage.setItem("mode", savedMode);
