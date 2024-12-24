@@ -1,13 +1,13 @@
 #Adder {
     @apply bg-[#8080808b] h-screen fixed top-0 right-0
-    flex justify-center items-center
+    flex justify-center items-center z-50
 }
 #Adder .cross {
     @apply absolute right-5 top-5 text-white text-[30px]
     cursor-pointer
 }
 #Adder .addInput {
-    @apply w-[600px] h-[650px] bg-white rounded-xl
+    @apply w-[600px] h-[650px] bg-[#d7d7d7] rounded-xl
     p-10 flex flex-col
 }
 #Adder .addInput label {
@@ -45,7 +45,7 @@
     @apply w-[30px] h-[30px] rounded-full bg-[#FFAF00] border-[2px] border-black cursor-pointer
 }
 #Adder .addInput .colors .palates .palate4 {
-    @apply w-[30px] h-[30px] rounded-full bg-[#fff] border-[2px] border-black cursor-pointer
+    @apply w-[30px] h-[30px] rounded-full bg-[#d7d7d7] border-[2px] border-black cursor-pointer
 }
 #Adder .addInput .colors .palates .picker input {
     @apply hidden absolute

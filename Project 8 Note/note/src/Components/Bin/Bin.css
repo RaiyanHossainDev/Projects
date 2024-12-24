@@ -1,0 +1,15 @@
+.trashNotes .singleTrashNote {
+    @apply border-b-2 py-3 flex justify-between items-center px-2 transition-all 
+}
+.trashNotes .singleTrashNote h2 {
+    @apply text-2xl font-manrope font-bold
+}
+.trashNotes .singleTrashNote:hover {
+    @apply shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]
+}
+.trashNotes .singleTrashNote:hover .buttons {
+    @apply opacity-100
+}
+.trashNotes .singleTrashNote .buttons {
+    @apply opacity-0 transition-all duration-200
+}

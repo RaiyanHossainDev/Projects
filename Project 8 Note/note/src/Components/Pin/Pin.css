@@ -1,0 +1,29 @@
+#pinPage .pinNote {
+    @apply flex gap-4 mt-10
+}
+#pinPage .pinNote .singlePinNote {
+    @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all
+    p-5 font-roboto text-[gray] relative overflow-hidden
+}
+#pinPage .pinNote .singlePinNote h2 {
+    @apply text-[30px] font-bold 
+}
+#pinPage .pinNote .singlePinNote p {
+    @apply mt-[20px] text-[18px] overflow-auto
+}
+#pinPage .pinNote .singlePinNote .buttons {
+    @apply absolute right-3 bottom-3 opacity-0 transition-all duration-200
+    flex flex-row-reverse
+}
+#pinPage .pinNote .singlePinNote:hover .buttons {
+    @apply opacity-100
+}
+#pinPage .pinNote .singlePinNote .buttons svg {
+    @apply text-black text-2xl cursor-pointer
+}
+#pinPage .pinNote .singlePinNote .buttons .events {
+    @apply flex gap-3 absolute right-8 transition-all
+}
+#pinPage .pinNote .singlePinNote .buttons .events svg {
+    @apply text-xl cursor-pointer
+}

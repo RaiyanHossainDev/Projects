@@ -1,10 +1,13 @@
 import React from 'react'
+import Pin from '../Components/Pin/Pin'
 
 const PinPage = () => {
   return (
-    <div className='w-full overflow-auto h-[840px]'>
-      This Pin ... 
-    </div>
+    <>
+      <div className='p-4 w-full'>
+        <Pin/>
+      </div>
+    </>
   )
 }
 

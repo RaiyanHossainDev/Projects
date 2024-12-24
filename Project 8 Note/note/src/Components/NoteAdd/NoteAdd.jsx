@@ -12,7 +12,7 @@ const NoteAdd = ({slideValue,cross}) => {
   const [palate,setPalate] = useState(false)
   const [todo,setTodo] = useState({todoTitle:'',todoNote:''})
   const [todoError,setTodoError] = useState({titleError:'',noteError:''})
-  const [colors,setColors] = useState('#e9e8e8')
+  const [color,setColor] = useState('#d7d7d7')
 
 
   // ============================ Redux variables
@@ -32,26 +32,26 @@ const NoteAdd = ({slideValue,cross}) => {
       }else{
           // ================================ Transfering Data to RealTime dataBase =================----------------
           set(push(ref(db, 'todoData/')), {
-            'title'  : todo.todoTitle ,
-            'note'   : todo.todoNote ,
-            'pinned' : false ,
-            'userUID': currentUser.uid ,
-            'color'  : colors ,
+            'title'    : todo.todoTitle ,
+            'note'     : todo.todoNote ,
+            'color'    : color,
+            'is_pinned': false,
+            'userUID'  : currentUser.uid,
           });
           cross(false)
-          setTodo((prev)=>({...prev,todoTitle:'',todoNote:''}))
-          setColors('#fff')
+          setTodo((prev)=>({...prev,todoNote:'',todoTitle:'',}))
+          setColor('#d7d7d7')
         }
   }
 
   
   return (
     <section className={`${slideValue?"w-full":'w-0'} transition-all duration-500`} id='Adder'>
-        <ImCross className={`cross ${slideValue?'block':'hidden'}`} onClick={()=>{cross(false),setColors('#fff')}} />
+        <ImCross className={`cross ${slideValue?'block':'hidden'}`} onClick={()=>cross(false)} />
         <div className={`${slideValue?'block':'hidden'}`}>
           <div className='addInput' style={
             {
-              backgroundColor: colors,
+              backgroundColor: color,
             }
           }>
             {/* ============================== title ================================================ */}
@@ -67,13 +67,13 @@ const NoteAdd = ({slideValue,cross}) => {
               <div className="colors">
                 <IoColorPaletteOutline onClick={()=>setPalate(!palate)} />
                 <div className={`palates ${palate?'left-10':'left-[-179px]'} transition-all`}>
-                  <div onClick={()=>setColors('#00FF9C')} className="palate1"></div>
-                  <div onClick={()=>setColors('#FF204E')} className="palate2"></div>
-                  <div onClick={()=>setColors('#FFAF00')} className="palate3"></div>
-                  <div onClick={()=>setColors('#e9e8e8')} className="palate4"></div>
+                  <div onClick={()=>setColor("#00FF9C")} className="palate1"></div>
+                  <div onClick={()=>setColor("#FF204E")} className="palate2"></div>
+                  <div onClick={()=>setColor("#FFAF00")} className="palate3"></div>
+                  <div onClick={()=>setColor("#d7d7d7")} className="palate4"></div>
                   <div className="picker">
                     <label htmlFor="picker"><MdColorize className='ml-[10px]' /></label>
-                    <input onChange={(e)=>setColors(e.target.value)} id='picker' type={`color`} />
+                    <input onChange={(i)=>setColor(i.target.value)} id='picker' type={`color`} />
                   </div>
                 </div>
               </div>

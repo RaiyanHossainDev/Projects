@@ -18,16 +18,19 @@
     @apply text-[30px]
 }
 #All .line {
-    @apply w-full h-1 bg-gray-400 mt-[50px] rounded-lg 
+    @apply w-full h-1 bg-gray-400 my-[40px] rounded-lg 
     
     bg-gradient-to-tl from-red-400 from-0% via-blue-50 via-50% to-cyan-300 to-100%
 }
 #All .Notes {
-    @apply mt-[20px] flex flex-wrap gap-10
+    @apply mt-[20px] flex flex-wrap gap-10 
 }
 #All .Notes .singleNoteCard {
     @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all
-    p-5 font-roboto text-gray-700 
+    p-5 font-roboto text-[gray] relative overflow-hidden
+}
+#All .Notes .singleNoteCard:hover .buttons {
+    @apply opacity-100
 }
 #All .Notes .singleNoteCard h2 {
     @apply text-[30px] font-bold 
@@ -35,3 +38,50 @@
 #All .Notes .singleNoteCard p {
     @apply mt-[20px] text-[18px] overflow-auto
 }
+#All .Notes .singleNoteCard .buttons {
+    @apply absolute right-3 bottom-3 opacity-0 transition-all duration-200
+    flex flex-row-reverse
+}
+#All .Notes .singleNoteCard .buttons svg {
+    @apply text-black text-2xl cursor-pointer
+}
+#All .Notes .singleNoteCard .buttons .events {
+    @apply flex gap-3 absolute right-8 transition-all
+}
+#All .Notes .singleNoteCard .buttons .events svg {
+    @apply text-xl cursor-pointer
+}
+
+
+
+#All .pinNote {
+    @apply flex gap-4
+}
+#All .pinNote .singlePinNote {
+    @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all
+    p-5 font-roboto text-[gray] relative overflow-hidden
+}
+#All .pinNote .singlePinNote h2 {
+    @apply text-[30px] font-bold 
+}
+#All .pinNote .singlePinNote p {
+    @apply mt-[20px] text-[18px] overflow-auto
+}
+#All .pinNote .singlePinNote .buttons {
+    @apply absolute right-3 bottom-3 opacity-0 transition-all duration-200
+    flex flex-row-reverse
+}
+#All .pinNote .singlePinNote:hover .buttons {
+    @apply opacity-100
+}
+#All .pinNote .singlePinNote .buttons svg {
+    @apply text-black text-2xl cursor-pointer
+}
+#All .pinNote .singlePinNote .buttons .events {
+    @apply flex gap-3 absolute right-8 transition-all
+}
+#All .pinNote .singlePinNote .buttons .events svg {
+    @apply text-xl cursor-pointer
+}
+
+
