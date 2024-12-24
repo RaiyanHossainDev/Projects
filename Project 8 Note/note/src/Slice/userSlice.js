@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const userSlice = createSlice({
+export const UserSlice = createSlice({
   name: 'counter',
   initialState: {
     value: JSON.parse(localStorage.getItem('data')) ? JSON.parse(localStorage.getItem('data')) : null,
@@ -14,4 +14,4 @@ export const userSlice = createSlice({
 
 export const { userData } = userSlice.actions
 
-export default userSlice.reducer
+export default UserSlice.reducer
