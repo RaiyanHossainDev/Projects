@@ -6,8 +6,9 @@ header {
 }
 
 .header_row .header_search .searchBar {
-    @apply bg-[#00000033] w-[500px] h-[50px] rounded-[10px] flex
+    @apply bg-[#00000033] md:w-[266px] lg:w-[500px] h-[50px] rounded-[10px] md:flex
     gap-2 items-center text-[20px] px-[10px] font-roboto 
+    hidden 
 }
 .header_row .header_search .searchBar input {
     @apply border-none outline-none bg-transparent w-full
@@ -19,7 +20,7 @@ header {
     @apply flex gap-3 items-center
 }
 .header_row .user .userName h2 {
-    @apply font-manrope font-bold text-[20px] dark:text-white transition-all
+    @apply font-manrope font-bold text-[17px] sm:text-[20px] dark:text-white transition-all
 }
 .header_row .user .logout svg {
     @apply dark:text-white transition-all

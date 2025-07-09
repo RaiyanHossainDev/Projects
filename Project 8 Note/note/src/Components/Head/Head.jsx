@@ -3,7 +3,7 @@ import './Head.css'
 import { FiSearch } from 'react-icons/fi'
 import { IoIosLogOut } from 'react-icons/io'
 import { useDispatch, useSelector } from 'react-redux'
-import { userData } from '../../Slice/UserSlice'
+import { userData } from '../../slice/userSlice'
 import { useNavigate } from 'react-router-dom'
 import { Bounce, toast } from 'react-toastify'
 

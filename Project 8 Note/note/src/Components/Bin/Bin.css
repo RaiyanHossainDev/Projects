@@ -1,5 +1,6 @@
 .trashNotes .singleTrashNote {
     @apply border-b-2 py-3 flex justify-between items-center px-2 transition-all 
+    rounded-lg
 }
 .trashNotes .singleTrashNote h2 {
     @apply text-2xl font-manrope font-bold

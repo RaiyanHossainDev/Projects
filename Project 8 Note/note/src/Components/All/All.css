@@ -1,5 +1,5 @@
 #All {
-    @apply p-10
+    @apply p-5 sm:p-10
 }
 #All .addBox {
     @apply w-[250px] h-[250px] bg-gray-300 rounded-xl 
@@ -23,7 +23,7 @@
     bg-gradient-to-tl from-red-400 from-0% via-blue-50 via-50% to-cyan-300 to-100%
 }
 #All .Notes {
-    @apply mt-[20px] flex flex-wrap gap-10 
+    @apply mt-[20px] flex flex-wrap gap-10 justify-center sm:justify-start
 }
 #All .Notes .singleNoteCard {
     @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all
@@ -55,7 +55,7 @@
 
 
 #All .pinNote {
-    @apply flex gap-4
+    @apply flex gap-4 flex-wrap justify-center sm:justify-start
 }
 #All .pinNote .singlePinNote {
     @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all

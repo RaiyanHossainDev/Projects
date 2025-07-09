@@ -5,7 +5,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { IoEye, IoEyeOffSharp }                from 'react-icons/io5';
 import { Bounce, toast }                       from 'react-toastify';
 import { useDispatch, useSelector }            from 'react-redux';
-import { userData }                            from '../../Slice/UserSlice';
+import { userData } from '../../slice/userSlice';
 
 
 
@@ -40,7 +40,6 @@ const Login = () => {
       signInWithEmailAndPassword(auth, form.email, form.password)
         .then((userCredential) => {
           const user = userCredential.user;
-
           if (user.emailVerified == false) {
             toast.info('Your Email is not verified', {
               position       : "top-right",
@@ -66,7 +65,7 @@ const Login = () => {
               theme          : "dark",
               transition     : Bounce,
               });
-              dispatch(userData(user))
+              // dispatch(userData(user))
               localStorage.setItem("data",JSON.stringify(user))
           }
         })

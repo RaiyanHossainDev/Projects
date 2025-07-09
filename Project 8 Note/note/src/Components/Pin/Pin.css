@@ -1,5 +1,5 @@
 #pinPage .pinNote {
-    @apply flex gap-4 mt-10
+    @apply flex gap-4 mt-10 flex-wrap justify-center sm:justify-start
 }
 #pinPage .pinNote .singlePinNote {
     @apply w-[260px] h-[280px] bg-[#e9e8e8] rounded-lg hover:scale-105 transition-all

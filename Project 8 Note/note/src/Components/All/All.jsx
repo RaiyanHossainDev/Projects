@@ -8,8 +8,6 @@ import { TbDotsCircleHorizontal }                               from 'react-icon
 import { MdOutlinePushPin }                                     from 'react-icons/md';
 import { FaEdit, FaTrash }                                      from 'react-icons/fa';
 import { Link }                                                 from 'react-router-dom';
-import { Bounce, toast }                                        from 'react-toastify';
-import { ImCross }                                              from 'react-icons/im';
 
 
 const All = () => {
@@ -19,6 +17,7 @@ const All = () => {
   const [uniqueKey,setUniqueKey]   = useState({key:'',show:''})
   const [morePin,setMorePin]       = useState(false)
   const [somePinned,setSomePinned] = useState([])
+  const [editData,setEditData]     = useState()
 
   // ================================= Redux variables
   const currentUser = useSelector(state=>state.userData.value)
@@ -51,6 +50,11 @@ const All = () => {
     })
     // ======= removing
     remove(ref(db, 'todoData/'+ item.key))
+  }
+  // ================= Edit function
+  let handleEdit = (data)=>{
+    setAdder(true)
+    setEditData(data)
   }
 
 
@@ -91,8 +95,11 @@ const All = () => {
         <RiStickyNoteAddLine />
       </div>
       {/* ====================== Adder calling =========== */}
-      <NoteAdd slideValue = {adder} cross = {setAdder}/>
+      <NoteAdd setEditData={setEditData} editData={editData} slideValue = {adder} cross = {setAdder}/>
       <div     className  = "line"></div>
+
+
+
       {/* =========================================== Pinned Notes =========================================== */}
       <div className = "pinNote relative">
         {
@@ -112,8 +119,8 @@ const All = () => {
                   <TbDotsCircleHorizontal onClick   = {()=>setUniqueKey((prev)=>({...prev, key:data.key , show:!uniqueKey.show}))} />
                   <div                    className = {`events ${uniqueKey.show && uniqueKey.key == data.key?'bottom-1': 'bottom-[-38px]'}`}>
                   <RiUnpinLine            onClick   = {()=>{handleUnpin(data),setUniqueKey((prev)=>({...prev,show:false}))}} className = 'text-yellow-300' />
-                  <FaTrash                onClick   = {()=>handleTrash(data)} className                                                = 'text-red-400' />
-                  <FaEdit                 className = 'text-blue-300' />
+                  <FaTrash                onClick   = {()=>handleTrash(data)} className = 'text-red-400' />
+                  <FaEdit                 onClick   = {()=>handleEdit(data)}  className = 'text-blue-300' />
                     </div>
                   </div>
                 </div>
@@ -129,7 +136,7 @@ const All = () => {
         }
       </div>
       <div className = "line"></div>
-      {/* ================================= Single note cards ============== */}
+      {/* ================================= Single note cards ==========-=-=--=-=-=-=-=--=-=-=-=-===== */}
       <div className = "Notes">
         {
           todoData.map((data)=>{
@@ -149,7 +156,7 @@ const All = () => {
                   <div                    className = {`events ${uniqueKey.show && uniqueKey.key == data.key?'bottom-1': 'bottom-[-38px]'}`}>
                   <MdOutlinePushPin       onClick   = {()=>{handlePin(data.key),setUniqueKey((prev)=>({...prev,show:false}))}} className = 'text-yellow-300' />
                   <FaTrash                onClick   = {()=>handleTrash(data)}className                                                   = 'text-red-400' />
-                  <FaEdit                 className = 'text-blue-300' />
+                  <FaEdit                 onClick   = {()=>handleEdit(data)} className = 'text-blue-300' />
                     </div>
                   </div>
                 </div>

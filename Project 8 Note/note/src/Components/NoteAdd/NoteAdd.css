@@ -7,11 +7,11 @@
     cursor-pointer
 }
 #Adder .addInput {
-    @apply w-[600px] h-[650px] bg-[#d7d7d7] rounded-xl
+    @apply w-full sm:w-[600px] h-[600px] sm:h-[650px] bg-[#d7d7d7] rounded-xl
     p-10 flex flex-col
 }
 #Adder .addInput label {
-    @apply font-manrope font-semibold text-[30px] text-gray-700
+    @apply font-manrope font-semibold text-[19px] sm:text-[30px] text-gray-700
 }
 #Adder .addInput input {
     @apply w-full border-none h-[50px] bg-[#77d9f7b0] rounded-xl
@@ -23,9 +23,10 @@
 }
 #Adder .addInput .keys {
     @apply flex items-center justify-between mt-7 w-full
+    flex-col sm:flex-row gap-5
 }
 #Adder .addInput .keys .colors {
-    @apply relative overflow-hidden w-[50%]
+    @apply relative overflow-hidden w-[100%]
 }
 #Adder .addInput .colors svg {
     @apply text-[30px] hover:rotate-[360deg] transition-all duration-300

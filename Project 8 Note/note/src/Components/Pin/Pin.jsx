@@ -5,12 +5,16 @@ import { RiUnpinLine } from 'react-icons/ri'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 import { getDatabase, ref, onValue, update, remove, push, set } from "firebase/database";
 import { useSelector } from 'react-redux'
+import NoteAdd from '../NoteAdd/NoteAdd'
 
 
 const Pin = () => {
   // ====================== custom useStates
   const [uniqueKey,setUniqueKey] = useState({key:'',show:''})
   const [allNote , setAllNote]   = useState([])
+  const [editData,setEditData]     = useState()
+  const [adder,setAdder]           = useState(false)
+
   
   // ========================= Redux variables
   const currentUser = useSelector(sate=>sate.userData.value)
@@ -36,6 +40,11 @@ const Pin = () => {
         userUID: item.userUID
       }))
     } 
+  // ========== Edit Function
+  let handleEdit = (data)=>{
+    setAdder(true)
+    setEditData(data)
+  }
   // ======================== reading Data form DataBase
   useEffect(()=>{
     onValue(ref(db, 'todoData/'), (snapshot) => {
@@ -71,8 +80,8 @@ const Pin = () => {
                     <TbDotsCircleHorizontal onClick={()=>setUniqueKey((prev)=>({...prev, key:data.key , show:!uniqueKey.show}))} />
                     <div className={`events ${uniqueKey.show && uniqueKey.key == data.key?'bottom-1': 'bottom-[-38px]'}`}>
                         <RiUnpinLine onClick={()=>{handleUnpin(data.key),setUniqueKey((prev)=>({...prev,show:false}))}} className='text-yellow-300' />
-                        <FaTrash onClick={()=>handleTrash(data)} className='text-red-400' />
-                        <FaEdit className='text-blue-300' />
+                        <FaTrash onClick = {()=>handleTrash(data)} className='text-red-400' />
+                        <FaEdit  onClick = {()=>handleEdit(data)} className='text-blue-300' />
                     </div>
                   </div>
                 </div>
@@ -82,6 +91,7 @@ const Pin = () => {
           })
         }
       </div>
+      <NoteAdd setEditData={setEditData} editData={editData} slideValue = {adder} cross = {setAdder}/>
     </section>
   )
 }
